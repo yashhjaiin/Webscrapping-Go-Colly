@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 )
@@ -68,7 +67,5 @@ func cleanData(value []string) (cleanValue []string) {
 
 	cleanValue = append(cleanValue, partTime)
 
-	fmt.Println(cleanValue)
-	fmt.Println("***")
 	return
 }

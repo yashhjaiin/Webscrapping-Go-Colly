@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"fmt"
 	"io"
 	"log"
 	"os"
@@ -75,4 +76,6 @@ func readcsv() {
 	}
 
 	writer.Flush()
+
+	fmt.Println("*** Cleaning Completed ***")
 }
