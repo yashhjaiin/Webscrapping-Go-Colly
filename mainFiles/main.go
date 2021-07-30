@@ -12,7 +12,7 @@ import (
 
 func main() {
 
-	file_name := "data.csv"
+	file_name := "csvFiles/rawData.csv"
 	file, err := os.Create(file_name)
 
 	if err != nil {

@@ -17,14 +17,14 @@ var internship struct {
 
 func readcsv() {
 
-	csvfile, err := os.Open("data.csv")
+	csvfile, err := os.Open("csvFiles/rawData.csv")
 	if err != nil {
 		log.Fatal("Error is : ", err)
 	}
 
 	r := csv.NewReader(csvfile)
 
-	file_name := "data2.csv"
+	file_name := "csvFiles/cleanData.csv"
 	file, err := os.Create(file_name)
 
 	if err != nil {
